@@ -28,7 +28,7 @@ import PollutantModal from '../pollutantModal'
 const AqiCard = ({ airQualityData }) => {
 
   const descriptions = [
-    "The air 100% sucks. Godspeed.",
+    "The air 100% sucks.",
     "The air really sucks.",
     "The air sucks.",
     "The air sucks a little bit. Still get out there.",
@@ -55,7 +55,7 @@ const AqiCard = ({ airQualityData }) => {
     const chartData = {
       labels: labels,
       datasets: [{
-        label: 'AQI over time (higher is better)',
+        label: 'AQI (higher is better)',
         data: values,
         fill: false,
         borderColor: 'rgb(75, 192, 192)',
